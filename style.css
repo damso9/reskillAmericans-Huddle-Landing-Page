@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+body {
+     font-size: 16px;
+     background: url(./images/bg-desktop.svg) no-repeat;
+     background-color: hsl(257, 40%, 49%);
+     font-family: 'Open Sans', sans-serif;
+     color: white;
+
+}
+
+main {
+    display: flex;
+    margin-top: 30px;
+    justify-content:space-between;
+    align-items: center;
+}
+.illustration {
+    display: flex;
+    justify-content:inherit;
+
+}
+.illustration img {
+    max-width: 100%;
+    object-fit:contain;
+    height: auto;
+}
+.content {
+    /* margin-top: 60px; */
+    flex: 50%;
+}
+.content-main {
+    margin: 30px;
+}
+h2 {
+    font-size: 2.0em;
+    line-height: .8em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+button {
+    padding: 20px 80px;
+    font-size: 1.1em;
+    border-radius: 2.0em;
+    border: none;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+button:hover {
+    color: white;
+    background: hsl(300, 69%, 71%);
+}
+p {
+    /* word-spacing: .3em; */
+    line-height: 1.3em;
+    color: whitesmoke;
+}
+.row {
+    margin: 30px;
+}
+.icon-group {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.icon{
+    font-size: 20px;
+    border: 2px solid white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50%;
+    color: white;
+}
+.icon1{
+    font-size: 1.3em;
+    border: 2px solid white;
+    padding: 10px 14px;
+    margin: 10px;
+    border-radius: 50%;
+    color: white;
+}
+.icon1:hover {
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+.icon:hover {
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+/* Extra small devices (phones,600px and down) */
+@media only screen and (max-width: 767px) {
+    main {
+        display: flex;
+        margin-top: 30px;
+        justify-content:space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .content {
+        margin-top: 20px;
+        text-align: center;
+    }
+    button {
+        width: 70%;
+    }
+    .icon-group {
+        justify-content: center;
+    }
+    body {
+        background: url(./images/bg-mobile.svg) no-repeat;
+        background-color: hsl(257, 40%, 49%);
+        background-size: contain;
+    }
+}
